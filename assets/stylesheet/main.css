@@ -1,0 +1,5 @@
+.jumbotron {
+	background-image: url('../img/main_wine.jpg');
+	background-size: cover;
+	background-position-y: 50%;
+}
