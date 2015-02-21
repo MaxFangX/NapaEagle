@@ -1,7 +1,11 @@
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: Georgia, Time, 'Times New Roman', serif;
+}
+
 .jumbotron {
 	background-image: url('../img/main_wine.jpg');
 	background-size: cover;
 	background-position-y: 50%;
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
 	height: 40vw;
 }
