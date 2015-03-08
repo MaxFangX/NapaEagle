@@ -1,3 +1,4 @@
 from django.contrib import admin
+from eagle.models import Wine
 
-# Register your models here.
+admin.site.register(Wine)

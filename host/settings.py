@@ -52,6 +52,8 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'host.urls'
 
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
 WSGI_APPLICATION = 'host.wsgi.application'
 
 
@@ -60,8 +62,11 @@ WSGI_APPLICATION = 'host.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.getenv('EAGLE_DB_NAME'),
+        'USER': os.getenv('EAGLE_USER'),
+        'PASSWORD': os.getenv('EAGLE_PASS'),
+        'PORT': os.getenv('EAGLE_DB_PORT'),
     }
 }
 
