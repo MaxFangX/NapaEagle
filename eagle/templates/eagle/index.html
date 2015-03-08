@@ -8,25 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="http://www.wineinvestmentreport.com/favicon.ico">
-
     <title>Napa Eagle Wineries - Investment grade wine</title>
-
-    <!-- Bootstrap core CSS -->
-    <!--<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" type="text/css" href="{% static 'eagle/lib/bootstrap-dark.min.css' %}">
-    <!-- Custom styles for this template -->
+    <link rel="icon" href="http://www.wineinvestmentreport.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{% static 'eagle/css/bootstrap-dark.min.css' %}">
     <link href="http://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="assets/stylesheet/parallax.css">
-    <link rel="stylesheet" type="text/css" href="assets/stylesheet/main.css">
-    <script src="assets/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="{% static 'eagle/css/parallax.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'eagle/css/main.css' %}">
+    <script src="{% static 'eagle/css/ie-emulation-modes-warning.js' %}"></script>
   </head>
 
   <body>
@@ -57,7 +46,7 @@
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron parallax-window" data-parallax="scroll" data-image-src="assets/img/main_wine.jpg">
+    <div class="jumbotron parallax-window" data-parallax="scroll" data-image-src="{% static 'eagle/img/main_wine.jpg' %}">
       <div class="container">
         <h1>Napa Eagle Wineries</h1>
         <p>Taste the Napa Valley difference.</p>
@@ -96,11 +85,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{% static 'eagle/js/jquery.min.js' %}"></script>
+    <script src="{% static 'eagle/js/bootstrap.min.js' %}"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="assets/js/parallax.min.js"></script>
+    <script src="{% static 'eagle/js/ie10-viewport-bug-workaround.js' %}"></script>
+    <script src="{% static 'eagle/js/parallax.min.js' %}"></script>
 
   </body>
 </html>
