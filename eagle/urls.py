@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 
 urlpatterns = patterns('', 
     url(r'^$', views.HomeView.as_view(), name='index'),
-    url(r'^catalog$', views.CatalogView.as_view(), name='catalog')    
+    url(r'^catalog/$', views.CatalogView.as_view(), name='catalog')    
 )
 
 
