@@ -1,0 +1,9 @@
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: Georgia, Time, 'Times New Roman', serif;
+}
+
+.jumbotron {
+	background-position-y: 50%;
+	height: 40vw;
+	background: transparent;
+}
