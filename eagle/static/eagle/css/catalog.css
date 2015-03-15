@@ -1,2 +1,10 @@
 /* Main css file for catalog.html */
+.products-index {
+    position: relative;
+}
+
+.product-card {
+    position: absolute;
+    width: 200px;
+}
 
