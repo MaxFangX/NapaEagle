@@ -10,7 +10,9 @@
 
 .product-card .header {
     position: relative;
+    height: 120px;
 }
+
 
 .product-card .header .left {
     position: absolute;
@@ -28,3 +30,7 @@
     height: 120px;
 }
 
+.product-card .header .image {
+    position: absolute;
+    height: 120px;
+}
