@@ -34,3 +34,7 @@
     position: absolute;
     height: 120px;
 }
+
+.product-card .description {
+    margin: 10px;
+}
