@@ -30,11 +30,26 @@
     height: 120px;
 }
 
-.product-card .header .image {
+.product-card .image {
     position: absolute;
     height: 120px;
 }
 
+.product-card .name {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.product-card .location {
+    color: #dddddd;
+    font-size: 12px;
+}
+
+.product-card .price {
+    color: #2ecc71;
+}
+
 .product-card .description {
     margin: 10px;
+    color: #FFFFFF;
 }
