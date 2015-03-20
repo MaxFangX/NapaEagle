@@ -4,7 +4,9 @@
   <head>
     <title>Catalog - Napa Eagle Winery</title>
     <link rel="icon" href="http://www.wineinvestmentreport.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{% static 'eagle/css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'eagle/css/bootstrap-dark.min.css' %}">
+    <link rel="stylesheet" href="{% static 'eagle/css/all.css' %}">
     <link rel="stylesheet" href="{% static 'eagle/css/catalog.css' %}">
   </head>
 
@@ -59,29 +61,36 @@
     <h1>Test load page</h1>
 
     <div class="product-index">
-      <div class="product-card">
-       	<div class="header">
-       	  <div class="left">
-       	  	<img class="image" src="http://i.imgur.com/CnLHeey.jpg"/>
-       	  </div>
-       	  <div class="right">
-       	  	<div class="name">2012 Viognier - Custom Delux</div>
-       	  	<div class="location">Russian River Valley</div>
-       	  	<div class="price">$53.99</div>
-       	  </div>
-       	</div>
-      	<div class="description">The 2012 Russian River Valley Viognier is a floral wine with excellent aromatics of honeysuckle, jasmine and stonefruit with light texture. Fermented in neutral barrels undergoing partial malolactic fermentation created this light to medium bodied wine.</div>
-      	<div class="action-group">
-      		<a class="action-btn purchase" href="/products/1">Purchase</a>
-      		<a class="action-btn wish-list" href="/products/1">Wish List</a>
-      		<a class="action-btn" href="/products/1">View</a>
-      	</div>
-      </div>
-    </div>
-
-
-
-    
+      {% for wine in wine_list %}
+        <div class="product-card panel panel-default">
+          <div class="panel-body">
+         	  <div class="header">
+         	    <div class="left">
+         	    	<img class="image" src="http://i.imgur.com/CnLHeey.jpg"/>
+         	    </div>
+         	    <div class="right">
+                <div class="name">{{ wine.name }}</div>
+                <div class="location">{{ wine.location }}</div>
+                <div class="price">${{ wine.price }}</div>
+         	    </div>
+         	  </div>
+            <div class="description">{{ wine.description }}</div>
+        	  <div class="btn-group" role="group">
+              <button type="button" class"btn btn-success">
+                <a class="purchase" href="/products/1">Purchase</a>
+              </button>
+              <button type="button" class"btn btn-warning">
+        	  	  <a class="wish-list" href="/products/1">Wish List</a>
+              </button>
+              <button type="button" class"btn btn-primary">
+        	  	  <a class="view" href="/products/1">View</a>
+              </button>
+        	  </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div> <!--END product-index-->
     <script type="text/javascript" src="{% static 'eagle/js/masonry.pkgd.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'eagle/js/catalog.js' %}"></script>
   </body>
 </html>

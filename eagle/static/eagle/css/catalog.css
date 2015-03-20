@@ -1,2 +1,59 @@
 /* Main css file for catalog.html */
+.products-index {
+    position: relative;
+}
 
+.product-card {
+    position: absolute;
+    width: 260px;
+}
+
+.product-card .header {
+    position: relative;
+    height: 120px;
+}
+
+
+.product-card .header .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 120px;
+}
+
+ .product-card .header .right {
+    position: absolute;
+    left: 92px;
+    top: 0;
+    right: 0;
+    height: 120px;
+}
+
+.product-card .image {
+    position: absolute;
+    height: 120px;
+}
+
+.product-card .name {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.product-card .location {
+    color: #dddddd;
+    font-size: 12px;
+}
+
+.product-card .price {
+    color: #2ecc71;
+}
+
+.product-card .description {
+    margin: 10px;
+    color: #FFFFFF;
+}
+
+button a {
+    color: #000000;
+}
