@@ -11,4 +11,7 @@ class Wine(models.Model):
                                 default="N/A")
     image_url = models.CharField(max_length=1000, 
             default="http://i.imgur.com/CnLHeey.jpg") #Generic image
+    created = models.DateTimeField(auto_now_add=True)
+    last_updated = models.DateTimeField(auto_now=True)
+    
 
