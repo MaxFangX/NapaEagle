@@ -12,5 +12,5 @@ class CatalogView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(CatalogView, self).get_context_data(**kwargs)
-        context['wine_list'] = Wine.objects.all
+        context['wine_list'] = Wine.objects.order_by("-created")[:100]
         return context
