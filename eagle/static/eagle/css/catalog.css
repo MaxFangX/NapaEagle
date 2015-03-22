@@ -1,6 +1,6 @@
 /* Main css file for catalog.html */
-.products-index {
-    position: relative;
+.product-index {
+    margin: 50px;
 }
 
 .product-card {
