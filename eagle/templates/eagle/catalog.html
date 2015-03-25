@@ -5,9 +5,9 @@
     <title>Catalog - Napa Eagle Winery</title>
     <link rel="icon" href="http://www.wineinvestmentreport.com/favicon.ico">
     <link rel="stylesheet" type="text/css" href="{% static 'eagle/css/reset.css' %}">
-    <link rel="stylesheet" href="{% static 'eagle/css/bootstrap-dark.min.css' %}">
-    <link rel="stylesheet" href="{% static 'eagle/css/all.css' %}">
-    <link rel="stylesheet" href="{% static 'eagle/css/catalog.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'eagle/css/bootstrap-dark.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'eagle/css/all.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'eagle/css/catalog.css' %}">
   </head>
 
   <body>
@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="/">Napa Eagle Wineries</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -57,39 +57,44 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-            
-    <h1>Test load page</h1>
-
-    <div class="product-index">
-      {% for wine in wine_list %}
-        <div class="product-card panel panel-default">
-          <div class="panel-body">
-         	  <div class="header">
-         	    <div class="left">
-         	    	<img class="image" src="http://i.imgur.com/CnLHeey.jpg"/>
-         	    </div>
-         	    <div class="right">
-                <div class="name">{{ wine.name }}</div>
-                <div class="location">{{ wine.location }}</div>
-                <div class="price">${{ wine.price }}</div>
-         	    </div>
-         	  </div>
-            <div class="description">{{ wine.description }}</div>
-        	  <div class="btn-group" role="group">
-              <button type="button" class"btn btn-success">
-                <a class="purchase" href="/products/1">Purchase</a>
-              </button>
-              <button type="button" class"btn btn-warning">
-        	  	  <a class="wish-list" href="/products/1">Wish List</a>
-              </button>
-              <button type="button" class"btn btn-primary">
-        	  	  <a class="view" href="/products/1">View</a>
-              </button>
-        	  </div>
+    <div class="container">
+      <div class="product-index">
+        {% for wine in wine_list %}
+          <div class="product-card panel panel-default">
+            <div class="panel-body">
+           	  <div class="header">
+           	    <div class="left">
+           	    	<img class="image" src="http://i.imgur.com/CnLHeey.jpg"/>
+           	    </div>
+           	    <div class="right">
+                  <div class="name">{{ wine.name }}</div>
+                  <div class="location">{{ wine.location }}</div>
+                  <div class="price">${{ wine.price }}</div>
+           	    </div>
+           	  </div>
+              <div class="description">{{ wine.description }}</div>
+          	  <div class="btn-group" role="group">
+                <button type="button" class"btn btn-success">
+                  <a class="purchase" href="/products/1">Purchase</a>
+                </button>
+                <button type="button" class"btn btn-warning">
+          	  	  <a class="wish-list" href="/products/1">Wish List</a>
+                </button>
+                <button type="button" class"btn btn-primary">
+          	  	  <a class="view" href="/products/1">View</a>
+                </button>
+          	  </div>
+            </div>
           </div>
-        </div>
-      {% endfor %}
-    </div> <!--END product-index-->
+        {% endfor %}
+      </div> <!--END product-index-->
+
+      <footer>
+        <p>© 2015 Napa Eagle LLC</p>
+      </footer>
+    </div>
+
+
     <script type="text/javascript" src="{% static 'eagle/js/masonry.pkgd.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'eagle/js/catalog.js' %}"></script>
   </body>
