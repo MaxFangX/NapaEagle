@@ -1,0 +1,20 @@
+div, h1, h2, h3, h4, h5, h6, p, a {
+	font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.jumbotron {
+	background-position-y: 50%;
+	height: 40vw;
+	background: transparent;
+}
+
+.section-inner.branding {
+    background-image: url("http://placehold.it/800/7F2626");
+}
+
+.section-inner.story {
+    background-image: url("http://placehold.it/800/FF4C4C");
+}
+.section-inner.cab1 {
+    background-image: url("http://placehold.it/800/FF0000");
+}
