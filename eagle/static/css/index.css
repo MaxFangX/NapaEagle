@@ -2,6 +2,11 @@ div, h1, h2, h3, h4, h5, h6, p, a {
 	font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .jumbotron {
 	background-position-y: 50%;
 	height: 40vw;
@@ -18,3 +23,4 @@ div, h1, h2, h3, h4, h5, h6, p, a {
 .section-inner.cab1 {
     background-image: url("http://seabirdwines.com/wp-content/uploads/2013/11/Seabird_background_cab.jpg");
 }
+
