@@ -2,6 +2,11 @@ div, h1, h2, h3, h4, h5, h6, p, a {
 	font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
+.navbar-header {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
@@ -11,6 +16,10 @@ div, h1, h2, h3, h4, h5, h6, p, a {
 	background-position-y: 50%;
 	height: 40vw;
 	background: transparent;
+}
+
+section {
+    margin-top: -20px;
 }
 
 .section-inner.branding {
@@ -24,3 +33,6 @@ div, h1, h2, h3, h4, h5, h6, p, a {
     background-image: url("http://seabirdwines.com/wp-content/uploads/2013/11/Seabird_background_cab.jpg");
 }
 
+footer {
+    padding: 15px;
+}
