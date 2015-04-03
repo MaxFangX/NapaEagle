@@ -23,6 +23,10 @@ section {
     margin-top: -20px;
 }
 
+.section-inner {
+    height: 100vh;
+}
+
 .section-inner.branding {
     background-image: url("http://seabirdwines.com/wp-content/themes/seabird/img/Seabird_background_about.jpg");
 }
