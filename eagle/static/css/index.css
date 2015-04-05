@@ -27,14 +27,15 @@ section {
     height: 100vh;
 }
 
-.section-inner.branding {
+#branding {
     background-image: url("http://seabirdwines.com/wp-content/themes/seabird/img/Seabird_background_about.jpg");
 }
 
-.section-inner.story {
+#story {
     background-image: url("http://seabirdwines.com/wp-content/themes/seabird/img/Seabird_Background.jpg");
 }
-.section-inner.cab1 {
+
+#cab1 {
     background-image: url("http://seabirdwines.com/wp-content/uploads/2013/11/Seabird_background_cab.jpg");
 }
 
