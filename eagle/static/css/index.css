@@ -2,9 +2,20 @@ div, h1, h2, h3, h4, h5, h6, p, a {
 	font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
-.navbar-header {
-    padding-left: 15px;
-    padding-right: 15px;
+body {
+    padding-top: 0px;
+}
+
+.nav-title {
+    display: inline-block;
+}
+
+.nav-menu {
+    display: inline-block;
+}
+
+.nav-menu-item {
+    display: inline-block;
 }
 
 .container-fluid {
