@@ -2,6 +2,10 @@ div, h1, h2, h3, h4, h5, h6, p, a {
 	font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
+a {
+    color: #FFF;
+}
+
 body {
     padding-top: 0px;
 }
@@ -10,12 +14,18 @@ body {
     display: inline-block;
 }
 
+.nav {
+    text-align: center;
+}
+
 .nav-menu {
     display: inline-block;
 }
 
 .nav-menu-item {
     display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .container-fluid {
