@@ -7,7 +7,7 @@ a {
 }
 
 body {
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 #site-navigation {
@@ -36,23 +36,21 @@ body {
 }
 
 .container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .jumbotron {
-	background-position-y: 50%;
 	height: 100vh;
 	background: transparent;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 section {
-    margin-top: -20px;
+    margin-top: -20;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30px;
     height: 100vh;
 }
 
