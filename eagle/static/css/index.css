@@ -12,6 +12,9 @@ body {
 
 #site-navigation {
     position: fixed;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-title {
