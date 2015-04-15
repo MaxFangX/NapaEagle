@@ -6,6 +6,11 @@ a {
     color: #FFF;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
 body {
     padding-top: 0;
 }
