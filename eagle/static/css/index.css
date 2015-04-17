@@ -45,8 +45,12 @@ body {
     padding-right: 9px;
 }
 
+.nav-menu-item.active {
+    background-color: #594920;
+}
+
 .nav-menu-item:hover {
-    background-color: #6F5207;
+    background-color: #362703;
 }
 
 .container-fluid {
