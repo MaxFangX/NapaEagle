@@ -76,16 +76,24 @@ section {
 	margin-top: -15px;
 }
 
-#branding {
-    background-image: url("http://seabirdwines.com/wp-content/themes/seabird/img/Seabird_background_about.jpg");
-}
-
-#story {
-    background-image: url("http://seabirdwines.com/wp-content/themes/seabird/img/Seabird_Background.jpg");
+#about {
+    background-image: url("http://miriadna.com/desctopwalls/images/max/Hawk.jpg");
 }
 
 #cab1 {
-    background-image: url("http://seabirdwines.com/wp-content/uploads/2013/11/Seabird_background_cab.jpg");
+    background-image: url("http://www.rameywine.com/userfiles/image/wine/Cabernet-Sauvignon-Pedregal-Vineyard-Oakville.jpg");
+}
+
+#story {
+    background-image: url("http://upload.wikimedia.org/wikipedia/commons/2/23/Chinese_railroad_workers_sierra_nevada.jpg");
+}
+
+#order {
+    background-image: url("http://winefolly.com/wp-content/uploads/2013/03/ilkka-siren-photo-by-heidi-uutela.jpg");
+}
+
+#contact {
+    background-image: url("http://thumbs.dreamstime.com/z/contact-us-20387849.jpg");
 }
 
 footer {
