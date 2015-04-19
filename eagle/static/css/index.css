@@ -74,6 +74,12 @@ section {
 
 .section-title {
 	margin-top: -15px;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+.section-description {
+    padding-left: 15px;
 }
 
 #about {
