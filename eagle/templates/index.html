@@ -25,18 +25,18 @@
     <nav id="site-navigation" class="nav">
       <div class="nav-inner">
       	<ul class="nav-menu">
-      	  <li class="nav-menu-item active"><a href="#">Napa Eagle Winery</a></li>
-      	  <li class="nav-menu-item"><a href="#about">About</a></li>
-      	  <li class="nav-menu-item"><a href="#cab1">Wines</a></li>
-      	  <li class="nav-menu-item"><a href="#story">Mission</a></li>
-          <li class="nav-menu-item"><a href="#order">Order</a></li>
-      	  <li class="nav-menu-item"><a href="#contact">Contact</a></li>
+      	  <li class="nav-menu-item active" data-name="home"><a href="#">Napa Eagle Winery</a></li>
+      	  <li class="nav-menu-item" data-name="about"><a href="#about">About</a></li>
+      	  <li class="nav-menu-item" data-name="wines"><a href="#wines">Wines</a></li>
+      	  <li class="nav-menu-item" data-name="story"><a href="#story">Story</a></li>
+          <li class="nav-menu-item" data-name="order"><a href="#order">Order</a></li>
+      	  <li class="nav-menu-item" data-name="contact"><a href="#contact">Contact</a></li>
       	</ul>
       </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron parallax-window" data-parallax="scroll" data-image-src="{% static 'img/main_wine.jpg' %}">
+    <div id="home" class="jumbotron parallax-window" data-parallax="scroll" data-image-src="{% static 'img/main_wine.jpg' %}">
       <div class="container">
         <h1>Napa Eagle Wineries</h1>
         <p>Taste the Napa Valley difference.</p>
@@ -51,7 +51,7 @@
           <h3 class="section-description">Branding information section description</h3>
       </section>
 
-      <section id="cab1">
+      <section id="wines">
         <h1 class="section-title">Cabernet Sauvignon 1 section</h1>
         <h3 class="section-description">Cabernet Sauvignon 1 section description</h3>
       </section>

@@ -65,7 +65,7 @@ body {
 }
 
 section {
-    margin-top: -20;
+    margin-top: -20px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,7 +73,7 @@ section {
 }
 
 .section-title {
-	margin-top: -15px;
+	/*margin-top: -15px;*/
     padding-top: 30px;
     padding-left: 15px;
 }
@@ -86,7 +86,7 @@ section {
     background-image: url("http://miriadna.com/desctopwalls/images/max/Hawk.jpg");
 }
 
-#cab1 {
+#wines {
     background-image: url("http://www.rameywine.com/userfiles/image/wine/Cabernet-Sauvignon-Pedregal-Vineyard-Oakville.jpg");
 }
 

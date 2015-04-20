@@ -1,4 +1,18 @@
 /* Responsive navbar */
+var sectionIndexes = {};
+var updateSectionIndexes = function() {
+    var sections = $('.nav-menu-item');
+    for (var i = 0; i < sections.length; i++) {
+        var section = sections[i];
+        var name = section.dataset['name'];
+        sectionIndexes[name] = $('#' + name).offset().top;
+    }
+}
+updateSectionIndexes();
+
+$(document).on('scroll', function(e) {
+
+})
 /*var transparent = false;
 var locked = false;
 $(document).on('scroll', function(e) {
