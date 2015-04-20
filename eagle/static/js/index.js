@@ -1,11 +1,19 @@
 /* Responsive navbar */
 var sectionIndexes = {};
+var updateLocked = false;
 var updateSectionIndexes = function() {
-    var sections = $('.nav-menu-item');
-    for (var i = 0; i < sections.length; i++) {
-        var section = sections[i];
-        var name = section.dataset['name'];
-        sectionIndexes[name] = $('#' + name).offset().top;
+    if (!updateLocked) {
+        updateLocked = true;
+        var sections = $('.nav-menu-item');
+        for (var i = 0; i < sections.length; i++) {
+            var section = sections[i];
+            var name = section.dataset['name'];
+            sectionIndexes[name] = $('#' + name).offset().top;
+        }
+        setTimeout(function() {
+            console.log("Updated section indexes");
+            updateLocked = false;
+        }, 1000);
     }
 }
 updateSectionIndexes();
@@ -13,6 +21,10 @@ updateSectionIndexes();
 $(document).on('scroll', function(e) {
 
 })
+
+window.onresize = function(event) {
+    updateSectionIndexes();
+};
 /*var transparent = false;
 var locked = false;
 $(document).on('scroll', function(e) {
