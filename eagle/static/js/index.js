@@ -1,5 +1,6 @@
 /* Responsive navbar */
-var sectionIndexes = {};
+var sectionIndexList = [];
+var sectionList = [];
 var updateLocked = false;
 var updateSectionIndexes = function() {
     if (!updateLocked) {
@@ -7,20 +8,46 @@ var updateSectionIndexes = function() {
         var sections = $('.nav-menu-item');
         for (var i = 0; i < sections.length; i++) {
             var section = sections[i];
-            var name = section.dataset['name'];
-            sectionIndexes[name] = $('#' + name).offset().top;
+            var name = section.dataset.name;
+            var offset = $('#' + name).offset().top;
+            if (sectionList.length < sections.length) {
+                sectionList.push(name);
+                sectionIndexList.push(offset);
+            } else {
+                sectionIndexList[i] = offset;
+            }
         }
         setTimeout(function() {
             console.log("Updated section indexes");
             updateLocked = false;
         }, 1000);
     }
-}
+};
 updateSectionIndexes();
 
+var previouslyActive = $('#wines-nav');
+var scrollLocked = false;
+var scrollOffset;
 $(document).on('scroll', function(e) {
-
-})
+    if (!scrollLocked) {
+        console.log("Running onScroll");
+        scrollOffset = $(document).scrollTop();
+        scrollLocked = true;
+        var resultIndex = 0;
+        for (var i = 0; i < sectionIndexList.length; i++) {
+            if (scrollOffset > sectionIndexList[i]) {
+                resultIndex = i;
+            }
+        }
+        console.log(resultIndex);
+        var sectionName = sectionList[resultIndex];
+        var newlyActive = $('#' + sectionName + '-nav');
+        previouslyActive.removeClass('active');
+        newlyActive.addClass('active');
+        previouslyActive = newlyActive;
+        scrollLocked = false;
+    }
+});
 
 window.onresize = function(event) {
     updateSectionIndexes();
