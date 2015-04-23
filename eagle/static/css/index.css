@@ -15,7 +15,7 @@ body {
     padding-top: 0;
 }
 
-#site-navigation {
+.site-navigation {
     position: fixed;
     width: 100%;
     margin-left: auto;
@@ -45,7 +45,7 @@ body {
     padding-right: 9px;
 }
 
-.nav-menu-item.active {
+.nav-menu .active {
     background-color: #594920;
 }
 
@@ -73,32 +73,41 @@ section {
 }
 
 .section-title {
-	/*margin-top: -15px;*/
-    padding-top: 30px;
-    padding-left: 15px;
+    background-color: #000;
+    background-color: rgba(89, 73, 32, 0.8);
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 100px;
+    padding: 10px;
 }
 
 .section-description {
-    padding-left: 15px;
+    background-color: #000;
+    background-color: rgba(89, 73, 32, 0.8);
+    display: inline-block;
+    margin-left: 50px;
+    max-width: 700px;
+    min-height: 50vh;
+    padding: 10px;
 }
 
-#about {
+.about {
     background-image: url("http://miriadna.com/desctopwalls/images/max/Hawk.jpg");
 }
 
-#wines {
+.wines {
     background-image: url("http://www.rameywine.com/userfiles/image/wine/Cabernet-Sauvignon-Pedregal-Vineyard-Oakville.jpg");
 }
 
-#story {
+.story {
     background-image: url("http://upload.wikimedia.org/wikipedia/commons/2/23/Chinese_railroad_workers_sierra_nevada.jpg");
 }
 
-#order {
+.order {
     background-image: url("http://winefolly.com/wp-content/uploads/2013/03/ilkka-siren-photo-by-heidi-uutela.jpg");
 }
 
-#contact {
+.contact {
     background-image: url("http://thumbs.dreamstime.com/z/contact-us-20387849.jpg");
 }
 
