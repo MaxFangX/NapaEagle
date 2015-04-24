@@ -13,6 +13,7 @@ a:hover {
 
 body {
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 .site-navigation {
@@ -54,18 +55,26 @@ body {
 }
 
 .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
+  padding: 0;
 }
 
-.jumbotron {
-	height: 100vh;
-	background: transparent;
-    margin-bottom: 0;
+.home {
+  background-image: url('../img/main_wine.jpg');
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  margin: 0;
+  padding: 0;
+}
+
+.home-title {
+  margin-left: 100px;
+  padding-top: 100px;
 }
 
 section {
-    margin-top: -20px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,7 +95,7 @@ section {
     background-color: rgba(89, 73, 32, 0.8);
     display: inline-block;
     margin-left: 50px;
-    max-width: 700px;
+    max-width: 600px;
     min-height: 50vh;
     padding: 10px;
 }
