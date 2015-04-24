@@ -102,14 +102,17 @@ section {
 
 .about {
     background-image: url("http://miriadna.com/desctopwalls/images/max/Hawk.jpg");
+    background-position: 30%;
 }
 
 .wines {
     background-image: url("http://www.rameywine.com/userfiles/image/wine/Cabernet-Sauvignon-Pedregal-Vineyard-Oakville.jpg");
+    background-position: 30%;
 }
 
 .story {
     background-image: url("http://upload.wikimedia.org/wikipedia/commons/2/23/Chinese_railroad_workers_sierra_nevada.jpg");
+    background-position: 30%;
 }
 
 .order {
