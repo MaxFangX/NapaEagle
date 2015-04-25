@@ -18,7 +18,7 @@ var updateSectionIndexes = function() {
             }
         }
         setTimeout(function() {
-            console.log("Updated section indexes");
+            //console.log("Updated section indexes");
             updateLocked = false;
         }, 1000);
     }
@@ -30,7 +30,7 @@ var scrollLocked = false;
 var scrollOffset;
 $(document).on('scroll', function(e) {
     if (!scrollLocked) {
-        console.log("Running onScroll");
+        //console.log("Running onScroll");
         scrollOffset = $(document).scrollTop();
         scrollLocked = true;
         var resultIndex = 0;
@@ -39,7 +39,7 @@ $(document).on('scroll', function(e) {
                 resultIndex = i;
             }
         }
-        console.log(resultIndex);
+        //console.log(resultIndex);
         var sectionName = sectionList[resultIndex];
         var newlyActive = $('#' + sectionName + '-nav');
         previouslyActive.removeClass('active');
