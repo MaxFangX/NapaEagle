@@ -74,6 +74,11 @@ body {
   padding-top: 100px;
 }
 
+.home-description {
+    margin-left: 5%;
+    margin-right: 20%;
+}
+
 section {
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -82,8 +87,6 @@ section {
 }
 
 .section-title {
-    background-color: #000;
-    background-color: rgba(89, 73, 32, 0.8);
     display: inline-block;
     margin-left: 50px;
     margin-top: 100px;
@@ -91,8 +94,6 @@ section {
 }
 
 .section-description {
-    background-color: #000;
-    background-color: rgba(89, 73, 32, 0.8);
     display: inline-block;
     margin-left: 50px;
     max-width: 600px;
