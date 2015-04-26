@@ -71,13 +71,15 @@ body {
 }
 
 .home-title {
+  display: inline-block;
   margin-left: 5vw;
   max-width: 75vw;
 }
 
 .home-description {
-    margin-left: 5%;
-    margin-right: 20%;
+    margin-left: 5vw;
+    max-width: 60vw;
+    min-height: 300px;
 }
 
 section {
