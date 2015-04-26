@@ -1,8 +1,11 @@
 h1, h2, h3, h4, h5, h6, div, p {
     font-family: Georgia;
+    color: #FFF;
 }
 
 .shaded {
     background-color: #000;
     background-color: rgba(89, 73, 32, 0.8);
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
 }
