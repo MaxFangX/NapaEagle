@@ -74,12 +74,14 @@ body {
     display: inline-block;
     margin-left: 5vw;
     max-width: 75vw;
+    padding: 7px;
 }
 
 .home-description {
     margin-left: 5vw;
     max-width: 60vw;
     min-height: 300px;
+    padding: 7px;
 }
 
 section {
@@ -93,15 +95,14 @@ section {
     display: inline-block;
     margin-left: 50px;
     margin-top: 100px;
-    padding: 10px;
+    padding: 7px;
 }
 
 .section-description {
-    display: inline-block;
     margin-left: 50px;
-    max-width: 600px;
+    max-width: 75vw;
     min-height: 50vh;
-    padding: 10px;
+    padding: 7px;
 }
 
 .about {
