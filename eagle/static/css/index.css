@@ -55,25 +55,25 @@ body {
 }
 
 .container-fluid {
-  padding: 0;
+    padding: 0;
 }
 
 .home {
-  background-image: url('../img/soaring_eagle_golden.jpg');
-  background-attachment: fixed;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 800px;
-  margin-top: 0;
-  padding: 0;
-  padding-top: 100px;
+    background-image: url('../img/soaring_eagle_golden.jpg');
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    margin-top: 0;
+    padding: 0;
+    padding-top: 100px;
 }
 
 .home-title {
-  display: inline-block;
-  margin-left: 5vw;
-  max-width: 75vw;
+    display: inline-block;
+    margin-left: 5vw;
+    max-width: 75vw;
 }
 
 .home-description {
