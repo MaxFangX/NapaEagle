@@ -7,6 +7,10 @@ h1 {
     font-size: 42px;
 }
 
+p {
+    font-size: 12px;
+}
+
 .shaded {
     background-color: #000;
     background-color: rgba(89, 73, 32, 0.8);
