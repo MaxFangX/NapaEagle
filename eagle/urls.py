@@ -4,7 +4,7 @@ from eagle import views
 from django.contrib.auth.decorators import login_required
 
 urlpatterns = patterns('', 
-    url(r'^$', views.HomeView.as_view(), name='index'),
+    url(r'^$', views.homepage, name='homepage'),
     url(r'^catalog/$', views.CatalogView.as_view(), name='catalog')    
 )
 

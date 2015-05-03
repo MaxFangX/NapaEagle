@@ -6,13 +6,10 @@ from eagle.models import Wine
 from eagle.forms import ContactForm
 
 
-class HomeView(TemplateView):
+def homepage(request):
     template_name = "index.html"
 
-    def get_context_data(self, **kwargs):
-        context = super(HomeView, self).get_context_data(**kwargs)
-        # context['contact_form'] =
-        return context
+    return render(request, "index.html", {})
 
 
 class CatalogView(ListView):
