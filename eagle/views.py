@@ -8,8 +8,14 @@ from eagle.forms import ContactForm
 
 def homepage(request):
     template_name = "index.html"
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            return HttpResponseRedirect('/thanks/')
+    else:
+        contact_form = ContactForm()
 
-    return render(request, "index.html", {})
+    return render(request, "index.html", {'contact_form': contact_form})
 
 
 class CatalogView(ListView):
