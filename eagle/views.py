@@ -8,8 +8,13 @@ from eagle.forms import ContactForm
 
 def homepage(request):
     template_name = "index.html"
-
-    return render(request, "index.html", {})
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            return HTPResponseRedirect('/catalog/')
+    else:
+        form = ContactForm()
+    return render(request, "index.html", {'contact_form': form})
 
 
 class CatalogView(ListView):
@@ -20,11 +25,3 @@ class CatalogView(ListView):
         context = super(CatalogView, self).get_context_data(**kwargs)
         context['wine_list'] = Wine.objects.order_by("-created")[:100]
         return context
-
-
-def get_contact_form(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            return HttpResponseRedirect('/catalog/')
-    return render(request, 'index.html', {'contact_form': form})
