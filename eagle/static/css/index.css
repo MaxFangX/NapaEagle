@@ -16,6 +16,10 @@ body {
     padding-bottom: 0;
 }
 
+input {
+    color: #000;
+}
+
 .site-navigation {
     position: fixed;
     width: 100%;
