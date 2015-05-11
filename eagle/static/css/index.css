@@ -17,12 +17,14 @@ body {
 }
 
 label {
+    margin-top: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     width: 100%;
 }
 
 input {
     color: #000;
-    width: 50%;
 }
 
 .site-navigation {
