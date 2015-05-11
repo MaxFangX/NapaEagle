@@ -16,17 +16,6 @@ body {
     padding-bottom: 0;
 }
 
-label {
-    margin-top: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    width: 100%;
-}
-
-input {
-    color: #000;
-}
-
 .site-navigation {
     position: fixed;
     width: 100%;
@@ -138,6 +127,21 @@ section {
 
 .contact {
     background-color: #000;
+}
+
+label {
+    margin-top: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 100%;
+}
+
+input {
+    color: #000;
+}
+
+textarea {
+    width: 100%;
 }
 
 footer {
