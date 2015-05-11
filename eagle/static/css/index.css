@@ -129,19 +129,25 @@ section {
     background-image: url("http://previews.123rf.com/images/aprilphoto/aprilphoto1403/aprilphoto140300523/26400928-dated-wine-bottle-corks-on-the-wooden-background-close-up.jpg");
 }
 
+.contact .section-description {
+    padding: 20px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
 label {
-    margin-top: 4px;
-    padding-top: 2px;
     padding-bottom: 2px;
     width: 100%;
 }
 
 input {
     color: #000;
+    margin-bottom: 10px;
 }
 
 textarea {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 footer {
