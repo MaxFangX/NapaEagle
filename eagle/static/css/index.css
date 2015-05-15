@@ -22,11 +22,11 @@ body {
 }
 
 .site-navigation {
+    background-color: #000;
     position: fixed;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #000;
     height: 25px;
     line-height: 25px;
 }
@@ -52,11 +52,11 @@ body {
 }
 
 .nav-menu .active {
-    background-color: #594920;
+    background-color: #CF9700;
 }
 
 .nav-menu-item:hover {
-    background-color: #362703;
+    background-color: #D7AE40;
 }
 
 .container-fluid {
@@ -76,6 +76,7 @@ body {
 }
 
 .home-title {
+    background-color: #CF9700;
     display: inline-block;
     margin-left: 5vw;
     max-width: 75vw;
@@ -99,6 +100,7 @@ section {
 }
 
 .section-title {
+    background-color: #CF9700;
     display: inline-block;
     margin-left: 50px;
     margin-top: 100px;
