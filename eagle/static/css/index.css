@@ -3,7 +3,7 @@
     src: url('../fonts/BebasNeueRegular.otf') format('opentype');
 }
 
-div, h1, h2, h3, h4, h5, h6, p, a {
+div, h2, h3, h4, h5, h6, p, a {
 	/*font-family: Georgia, Times, 'Times New Roman', serif;*/
     font-family: 'Slabo 27px', serif;
 }
@@ -94,7 +94,8 @@ body {
     display: inline-block;
     margin-left: 5vw;
     max-width: 75vw;
-    padding: 7px;
+    padding: 10px;
+    padding-bottom: 0;
 }
 
 .home-description {
@@ -111,7 +112,6 @@ section {
     background-size: cover;
     min-height: 700px;
     height: 110vh;
-    padding-bottom: 50px;
 }
 
 .section-title {
@@ -120,7 +120,7 @@ section {
     margin-left: 50px;
     margin-top: 100px;
     padding: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .section-description {
@@ -181,7 +181,4 @@ textarea {
     bottom: 0;
     padding-left: 15px;
     margin-top: -30px;
-}
-
-.footer p {
 }
