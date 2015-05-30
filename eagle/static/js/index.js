@@ -35,7 +35,7 @@ $(document).on('scroll', function(e) {
         scrollLocked = true;
         var resultIndex = 0;
         for (var i = 0; i < sectionIndexList.length; i++) {
-            if (scrollOffset > sectionIndexList[i]) {
+            if (scrollOffset + 5 > sectionIndexList[i]) {
                 resultIndex = i;
             }
         }
