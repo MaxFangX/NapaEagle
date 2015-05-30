@@ -106,6 +106,10 @@ body {
     padding: 7px;
 }
 
+.about-us {
+    color: #000;
+}
+
 section {
     background-attachment: fixed;
     background-repeat: no-repeat;
