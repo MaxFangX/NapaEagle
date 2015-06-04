@@ -139,6 +139,7 @@ section {
 .about {
     background-image: url("http://miriadna.com/desctopwalls/images/max/Hawk.jpg");
     background-position: 30%;
+    margin-top: -10px;
 }
 
 .wines {
