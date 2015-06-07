@@ -90,23 +90,6 @@ body {
     padding-top: 100px;
 }
 
-.home-title {
-    background-color: #CF9700;
-    display: inline-block;
-    margin-left: 5vw;
-    max-width: 75vw;
-    padding: 10px;
-    padding-bottom: 0;
-}
-
-.home-description {
-    font-size: 16px;
-    margin-left: 5vw;
-    max-width: 400px;
-    min-height: 300px;
-    padding: 7px;
-}
-
 .about-us {
     color: #000;
     margin: 5px;
