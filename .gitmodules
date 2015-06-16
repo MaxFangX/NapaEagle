@@ -1,0 +1,3 @@
+[submodule "eagle/static/lib/photoswipe"]
+	path = eagle/static/lib/photoswipe
+	url = https://github.com/dimsemenov/PhotoSwipe
