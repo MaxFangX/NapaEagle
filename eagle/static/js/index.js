@@ -52,31 +52,32 @@ $(document).on('scroll', function(e) {
 window.onresize = function(event) {
     updateSectionIndexes();
 };
-/*var transparent = false;
-var locked = false;
-$(document).on('scroll', function(e) {
-    if (transparent && $(document).scrollTop() === 0 && !locked) {
-        locked = true;
-        $('.navbar').animate({
-            'opacity': 1,
-            'color': '#888'
-        }, 500);
-        $('.navbar-header').animate({
-            'color': '#FFF'
-        }, 500);
-        transparent = false;
-        locked = false;
-    } else if (!transparent && $(document).scrollTop() !== 0 && !locked) {
-        locked = true;
-        $('.navbar').animate({
-            'opacity': 0.2,
-            'color': 'transparent'
-        }, 500);
-        $('.navbar-header').animate({
-            'color': '#FFF'
-        }, 500);
-        transparent = true;
-        locked = false;
+
+
+var pswpElement = document.querySelectorAll('.pswp')[0];
+
+// build items array
+var items = [
+    {
+        src: 'http://i.imgur.com/7XJKPA7.jpg',
+        w: 600,
+        h: 400
+    },
+    {
+        src: 'http://upload.wikimedia.org/wikipedia/commons/2/23/Chinese_railroad_workers_sierra_nevada.jpg',
+        w: 1200,
+        h: 900
     }
-});
-*/
+];
+
+// define options (if needed)
+var options = {
+    // optionName: 'option value'
+    // for example:
+    index: 0 // start at first slide
+};
+
+// Initializes and opens PhotoSwipe
+var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+gallery.init();
+
