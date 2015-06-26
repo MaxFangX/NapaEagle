@@ -136,6 +136,12 @@ section {
     background-position: 30%;
 }
 
+.wine-logo {
+    max-height: 400px;
+    margin-top: 15px;
+    margin-left: 20px;
+    background-color: #000;
+}
 .story {
     background-image: url("http://upload.wikimedia.org/wikipedia/commons/2/23/Chinese_railroad_workers_sierra_nevada.jpg");
     background-position: 30%;
