@@ -59,15 +59,55 @@ document.querySelector('#gallery-nav').addEventListener("click", function() {
     // build items array
     var items = [
         {
-            src: 'http://i.imgur.com/7XJKPA7.jpg',
-            w: 600,
-            h: 400
+            src: 'http://i.imgur.com/HNnDas5.jpg',
+            w: 3800,
+            h: 5000,
         },
         {
-            src: 'http://upload.wikimedia.org/wikipedia/commons/2/23/Chinese_railroad_workers_sierra_nevada.jpg',
-            w: 1200,
-            h: 900
-        }
+            src: 'http://i.imgur.com/xME2RDe.jpg',
+            w: 3800,
+            h: 5000,
+        },
+        {
+            src: 'http://i.imgur.com/lsGSO9I.jpg',
+            w: 4800,
+            h: 7200,
+        },
+        {
+            src: 'http://i.imgur.com/9uqkbl8.jpg',
+            w: 4800,
+            h: 4800,
+        },
+        {
+            src: 'http://i.imgur.com/2Itcxcy.jpg',
+            w: 1363,
+            h: 2048,
+        },
+        {
+            src: 'http://i.imgur.com/OW3LobV.jpg',
+            w: 1363,
+            h: 2048,
+        },
+        {
+            src: 'http://i.imgur.com/UcAr97n.jpg',
+            w: 1363,
+            h: 2048,
+        },
+        {
+            src: 'http://i.imgur.com/tY71ss0.jpg',
+            w: 1366,
+            h: 2048,
+        },
+        {
+            src: 'http://i.imgur.com/FzcEs5I.jpg',
+            w: 1363,
+            h: 2048,
+        },
+        {
+            src: 'http://i.imgur.com/iVL1NhJ.jpg',
+            w: 1362,
+            h: 2048,
+        },
     ];
 
     // define options (if needed)
