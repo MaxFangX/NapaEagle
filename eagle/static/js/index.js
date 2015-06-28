@@ -59,6 +59,11 @@ document.querySelector('#gallery-nav').addEventListener("click", function() {
     // build items array
     var items = [
         {
+            src: 'http://i.imgur.com/Vaow4Y1.png',
+            w: 323,
+            h: 353,
+        },
+        {
             src: 'http://i.imgur.com/HNnDas5.jpg',
             w: 3800,
             h: 5000,
