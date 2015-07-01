@@ -1,1 +1,1 @@
-web: gunicorn host.wsgi --log-file -
+web: gunicorn eagle.wsgi --log-file -
