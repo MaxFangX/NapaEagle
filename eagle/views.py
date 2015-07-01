@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView, ListView
+from django.views.generic import ListView
 from django.http import HttpResponseRedirect
 
 from eagle.models import Wine
@@ -7,16 +7,16 @@ from eagle.forms import ContactForm
 
 
 def homepage(request):
-    template_name = "index.html"
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
             # Handling for the contact notification
-            return HttpResponseRedirect('/thanks/')
+            return HttpResponseRedirect('/')
     else:
         contact_form = ContactForm()
 
     return render(request, "index.html", {'contact_form': contact_form})
+
 
 class CatalogView(ListView):
     model = Wine
