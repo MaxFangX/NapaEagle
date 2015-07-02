@@ -50,11 +50,11 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'host.urls'
+ROOT_URLCONF = 'eagle.urls'
 
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
-WSGI_APPLICATION = 'host.wsgi.application'
+WSGI_APPLICATION = 'eagle.wsgi.application'
 
 
 # Database
