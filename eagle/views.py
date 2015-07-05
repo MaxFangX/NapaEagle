@@ -19,7 +19,7 @@ def homepage(request):
 
 
 def dashboard(request):
-    return render(request, "index.html")
+    return render(request, "dashboard.html")
 
 
 class CatalogView(ListView):
