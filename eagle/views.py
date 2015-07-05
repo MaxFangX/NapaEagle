@@ -18,6 +18,10 @@ def homepage(request):
     return render(request, "index.html", {'contact_form': contact_form})
 
 
+def dashboard(request):
+    return render(request, "index.html")
+
+
 class CatalogView(ListView):
     model = Wine
     template_name = "catalog.html"
