@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
+  {% load staticfiles %}
   <head>
+
     <title>{% block title %}Napa Eagle Winery{% endblock title %}</title>
+
+    {% block stylesheets %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-dark.min.css' %}">
+    {% endblock stylesheets %}
+
     {% block custom_head %} {% endblock custom_head %}
   </head>
   <body>
+
     {% block content %}{% endblock content %}
+
     {% block scripts %}
     <script src="{% static 'js/bootstrap.min.js'}"></script>
     {% endblock scripts %}
+
   </body>
 </html>
