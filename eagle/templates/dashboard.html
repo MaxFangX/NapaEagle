@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 
+{% load staticfiles %}
+
 {% block title %}Dashboard - Napa Eagle Winery{% endblock title %}
 
 {% block stylesheets %}
 {{block.super}}
-<link rel="stylesheet" type="text/css" href="{% statis 'css/dashboard.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}">
 {% endblock stylesheets %}
 
 {% block content %}
