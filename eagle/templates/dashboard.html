@@ -2,6 +2,11 @@
 
 {% block title %}Dashboard - Napa Eagle Winery{% endblock title %}
 
+{% block stylesheets %}
+{{block.super}}
+<link rel="stylesheet" type="text/css" href="{% statis 'css/dashboard.css' %}">
+{% endblock stylesheets %}
+
 {% block content %}
 <h1>Welcome to your Napa Eagle Winery Dashboard</h1>
 <p>Lorem ipsum dolor sit amet</p>
