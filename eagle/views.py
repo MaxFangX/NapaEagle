@@ -10,7 +10,7 @@ def homepage(request):
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
-            # Handling for the contact notification
+            # TODO: Add handling for the contact notification
             return HttpResponseRedirect('/')
     else:
         contact_form = ContactForm()

@@ -8,9 +8,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import dj_database_url
 import os
+
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+ENVIRONMENT = os.getenv('ENVIRONMENT', 'dev')
 
 
 # Quick-start development settings - unsuitable for production
@@ -93,13 +97,13 @@ STATIC_ROOT = 'staticfiles'
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-# Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
-
-# Enable Connection Pooling
-DATABASES['default']['ENGINE'] = 'django_postgrespool'
-
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+if not ENVIRONMENT == 'dev':
+    # Parse database configuration from $DATABASE_URL
+    DATABASES['default'] = dj_database_url.config()
+
+    # Enable Connection Pooling
+    DATABASES['default']['ENGINE'] = 'django_postgrespool'
