@@ -101,9 +101,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
-if not ENVIRONMENT == 'dev':
-    # Parse database configuration from $DATABASE_URL
-    DATABASES['default'] = dj_database_url.config()
+# Parse database configuration from $DATABASE_URL
+DATABASES['default'] = dj_database_url.config()
 
-    # Enable Connection Pooling
-    DATABASES['default']['ENGINE'] = 'django_postgrespool'
+# Enable Connection Pooling
+DATABASES['default']['ENGINE'] = 'django_postgrespool'
