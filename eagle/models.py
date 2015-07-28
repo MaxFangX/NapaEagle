@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-# Create your models here.
 class Wine(models.Model):
     name = models.CharField(max_length=256)
     location = models.CharField(max_length=256)
@@ -17,3 +16,9 @@ class Profile(models.Model):
     user = models.OneToOneField(User)
     referrer = models.ForeignKey(User, null=True, related_name='+')
     full_name = models.CharField(null=True, blank=True, max_length=128)
+
+
+class Purchase(models.Model):
+    buyer = models.ForeignKey(User, null=False)
+    product = models.ForeignKey(Wine)
+    date = models.DateTimeField()
