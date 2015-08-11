@@ -22,3 +22,9 @@ class Purchase(models.Model):
     buyer = models.ForeignKey(User, null=False)
     product = models.ForeignKey(Wine)
     date = models.DateTimeField()
+
+
+class Message(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    message = models.TextField(max_length=2000)
